@@ -273,8 +273,6 @@ void Fill_b_from_borders()
     b[bn * n + a] += 2 * G_Bottom[a];
   }
 
-
-
   for (int a = 0; a < floor(n / 3 ); a++)
   {  
     b[a] += 2 * G_Top[a];       
@@ -290,8 +288,6 @@ void Fill_b_from_borders()
   {  
     b[a] += 2 * G_Top[a];        
   }
-
-
 }
 
 void Print_C_k()
@@ -336,7 +332,6 @@ void Fill_b_from_C_bk()
   }
 }
 
-
 void Solve()
 {
   //Factorizing  
@@ -369,7 +364,6 @@ int main(int argc, char** argv)
   delta_t = strtod(argv[2], NULL);
   for (int a = 0; a < N; a++)
     C_k[a] = 0;
-
 
   for (int i = 0; i < steps; i++)
   {
